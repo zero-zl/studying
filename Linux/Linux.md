@@ -1,48 +1,48 @@
-        1. Editor（编辑器的使用）https://www.runoob.com/linux/linux-vim.html
-        2. Shell Script（shell 的使用,bash 编辑器等）
-        3. User and Group(useradd,userdel,usermod,groupadd,groupdel,groupmod)
-        4. Package management(apt,snap,yum,)
-        5. Hardware and System Architecture(硬件和系统架构)
-        6. Block device and file system（块设备和文件系统）
-        7. System service（系统服务，systemctl (status,star,stop，enable)）
+   >    1. Editor（编辑器的使用）https://www.runoob.com/linux/linux-vim.html
+   >    2. Shell Script（shell 的使用,bash 编辑器等）
+   >    3. User and Group(useradd,userdel,usermod,groupadd,groupdel,groupmod)
+   >    4. Package management(apt,snap,yum,)
+   >   5. Hardware and System Architecture(硬件和系统架构)
+   >   6. Block device and file system（块设备和文件系统）
+   >   7. System service（系统服务，systemctl (status,star,stop，enable)）
 
-一）常用：
+# 一）常用：
 
-    ls: 列出目录
-    cd：切换目录
-    pwd：显示目前的目录
-    mkdir：创建一个新的目录
-    rmdir：删除一个空的目录
-    cp: 复制文件或目录
-    rm: 移除文件或目录
-    mv: 移动文件与目录，或修改文件与目录的名称
-    echo:输出
-    history:查看历史命令
-    cat ：输出文件内容
+  *  ls: 列出目录
+  *  cd：切换目录
+  *  pwd：显示目前的目录
+  *  mkdir：创建一个新的目录
+  *  rmdir：删除一个空的目录
+  *  cp: 复制文件或目录
+  *  rm: 移除文件或目录
+  *  mv: 移动文件与目录，或修改文件与目录的名称
+  *  echo:输出
+  *  history:查看历史命令
+  *  cat ：输出文件内容
 
-二）用户和组的管理
-USER:
-add useradd  [option] <username>
-del userdel [option] <username>
-mod usermod [option] <suername>
-passwd
+# 二）用户和组的管理
+## USER:
+| add    | useradd  | [option] | <username> |
+| del    | userdel  | [option] | <username> |
+| mod    | usermod  | [option] | <suername> |
+ ### passwd:   
 
-search
-/etc/passwd（所有用户）
-/etc/shadow(密码)
-groups  <username>(产看user所属组)
+### search
+* /etc/passwd（所有用户）
+* /etc/shadow(密码)
+* groups  <username>(产看user所属组)
 
-cd(切换用户)
+### cd(切换用户)
 su <username>
 
-GROUP:
+## GROUP:
 add
 del
 mod
 search
 /etc/group（所有用户组）
 
-三）块设备和文件系统
+# 三）块设备和文件系统
 3.1）df
 检查文件系统的磁盘空间占用情况。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。
 
@@ -90,5 +90,5 @@ fdisk [-l] 装置名称
 3.7) sudo gparted /dev/sdc 
 图形化界面磁盘管理
 
-四）
+# 四）System service（系统服务，systemctl (status,star,stop，enable)）
 
